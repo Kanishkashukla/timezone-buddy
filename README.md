@@ -29,10 +29,23 @@ Useful for remote teams, global meetings, or anyone working across timezones.
 - Java 17+ (tested on Java 21)  
 - Maven 3.8+  
 
+🔗 API Usage
+Endpoint
+GET /time?cities=Tokyo,London,Delhi
+
+Example Request
+curl "http://localhost:8080/time?cities=Tokyo,London,Delhi"
+
+Example Response
+{
+  "Tokyo": "2025-09-02T10:20:30+09:00",
+  "London": "2025-09-02T02:20:30+01:00",
+  "Delhi": "2025-09-02T06:50:30+05:30"
+}
+
 ### Clone & Run
 ```bash
 # Clone repository
-git clone https://github.com/yourusername/timezone-buddy.git
 cd timezone-buddy
 
 # Build and run
